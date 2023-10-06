@@ -21,7 +21,8 @@ def lee_entrenos(ruta):
                 int(calorias), 
                 float(distancia),
                 int(frecuencia),
-                compartido == "S")
+                compartido == "S"
+            )
             entrenos.append(entreno)
         
         return entrenos

@@ -10,7 +10,7 @@ def ciudadesPorTipo(entrenos, tipo):
     for entreno in entrenos:
         if entreno.tipo == tipo and not entreno.ubicacion in ciudades:
             ciudades.append(entreno.ubicacion)
-    return ciudades
+    return set(ciudades)
 
 def kmRecorridos(entrenos, ciudades):
     kmTotales = 0
